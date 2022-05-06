@@ -4,7 +4,7 @@ Meltano project [file bundle](https://meltano.com/docs/command-line-interface.ht
 
 Files:
 - [`transform/models`](./bundle/transform/models) (directory)
-- [`transform/profile/profiles.yml`](./bundle/transform/profiles/postgres/profiles.yml)
+- [`transform/profiles/postgres/profiles.yml`](./bundle/transform/profiles/postgres/profiles.yml)
 - [`transform/dbt_project.yml`](./bundle/transform/dbt_project.yml)
 - [`transform/.gitignore`](./bundle/transform/.gitignore)
 
