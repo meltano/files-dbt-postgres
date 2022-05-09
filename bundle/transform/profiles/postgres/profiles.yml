@@ -10,7 +10,7 @@ meltano:
       host: "{{ env_var('DBT_POSTGRES_HOST') }}"
       user: "{{ env_var('DBT_POSTGRES_USER') }}"
       password: "{{ env_var('DBT_POSTGRES_PASSWORD') }}"
-      port: {{ env_var('DBT_POSTGRES_PORT') }}
+      port: "{{ env_var('DBT_POSTGRES_PORT') | int }}"
       dbname: "{{ env_var('DBT_POSTGRES_DBNAME') }}"
       schema: "{{ env_var('DBT_POSTGRES_SCHEMA') }}"
       threads: 2
@@ -24,7 +24,7 @@ meltano:
       host: "{{ env_var('DBT_POSTGRES_HOST') }}"
       user: "{{ env_var('DBT_POSTGRES_USER') }}"
       password: "{{ env_var('DBT_POSTGRES_PASSWORD') }}"
-      port: {{ env_var('DBT_POSTGRES_PORT') }}
+      port: "{{ env_var('DBT_POSTGRES_PORT') | int }}"
       dbname: "{{ env_var('DBT_POSTGRES_DBNAME') }}"
       schema: "{{ env_var('DBT_POSTGRES_SCHEMA') }}"
       threads: 4
@@ -38,7 +38,7 @@ meltano:
       host: "{{ env_var('DBT_POSTGRES_HOST') }}"
       user: "{{ env_var('DBT_POSTGRES_USER') }}"
       password: "{{ env_var('DBT_POSTGRES_PASSWORD') }}"
-      port: {{ env_var('DBT_POSTGRES_PORT') }}
+      port: "{{ env_var('DBT_POSTGRES_PORT') | int}"
       dbname: "{{ env_var('DBT_POSTGRES_DBNAME') }}"
       schema: "{{ env_var('DBT_POSTGRES_SCHEMA') }}"
       threads: 6
