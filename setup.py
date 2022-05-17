@@ -1,14 +1,14 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
-    name="files-dbt",
-    version="0.3",
-    description="Meltano project files for dbt",
+    name="files-dbt-postgres",
+    version="0.1",
+    description="Meltano project files for dbt-postgres",
     packages=find_packages(),
     package_data={
         "bundle": [
             "transform/models/.gitkeep",
-            "transform/profile/profiles.yml",
+            "transform/profiles/postgres/profiles.yml",
             "transform/.gitignore",
             "transform/dbt_project.yml",
         ]
